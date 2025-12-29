@@ -1,56 +1,37 @@
-# IoskeleyMono
+# Nexsevka
 
-![Ioskeley Mono Cover](assets/SocialPreview.png)
+![Nexsevka Cover](assets/SocialPreview.png)
 
-The goal of this project is to configure the [Iosevka](https://github.com/be5invis/Iosevka) typeface to mimic the look and feel of **Berkeley Mono** as closely as possible.
+The goal of this project is to configure Iosevka based on my personal style. The name "Nexsevka" is a combination of my name, Nexo, and Iosevka.
 
-It uses Iosevka's extensive build options to select character variants that replicate the distinct aesthetic of Berkeley Mono, creating a free, open-source alternative for fans of that particular style.
+This font is my primary programming font, which is shown on my GitHub pages, and my programming language [Ruko](https://github.com/nx-v/ruko).
 
-The name is a simple mashup: **Iosevka** + **Berkeley** = **Ioskeley**.
+It uses Iosevka's build options to mimic the look and feel of Berkeley Mono, while incorporating my own preferences for character variants and metrics.
 
 This repository uses GitHub Actions to automatically build the font files whenever the configuration is updated.
+
+A separate branch, `propo`, contains a version of Nexsevka with quasi-proportional spacing, which I swap for writing documentation and prose.
 
 ---
 
 ## Installation
 
-The easiest way to get the font is to download it directly from the **Releases** page.
+Since this uses the `dev` build of Iosevka, you would need to have a copy of the Iosevka `dev` source files to build it locally, then copy the `private-build-plans.toml` file and the [ttfautohint](https://freetype.org/ttfautohint/) binary into the root directory.
 
-1. [Click here to go to the Releases Page](https://github.com/ahatem/IoskeleyMono/releases)
-2. Find the latest release and download the `IoskeleyMono-Build.zip` file.
-3. Unzip the file and install the fonts on your system.
-
----
-
-## Preview
-
-| Ioskeley Mono                                                                   | Berkeley Mono                                                                   |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| ![Ioskeley Mono Sample](assets/IoskeleyMono.png "Sample code in Ioskeley Mono") | ![Berkeley Mono Sample](assets/BerkeleyMono.png "Sample code in Berkeley Mono") |
-
-> Theme used in preview: [Kintsugi Dark Flared](https://marketplace.visualstudio.com/items?itemName=ahmedhatem.kintsugi)
-
----
-
-### In Action
-
-![Ioskeley Mono in Action](assets/InAction.png "Ioskeley Mono in real use")
+However, you can also download pre-built font files directly from this page, by going to `Code` > `Download ZIP`.
 
 ### Configuration Choices
 
 This configuration uses specific character variants and custom metrics to closely match the look and feel of Berkeley Mono.
 
-- **Custom Metrics:** The font's vertical proportions, letter spacing (`sb`), and parenthesis size have been manually adjusted. This is the key to capturing Berkeley's characteristically compact and geometric feel.
-- **Distinctive Characters:** Key glyphs were chosen to match, including a **single-storey `g`**, **flat-arc parentheses `()`**, and a **two-circle `8`**.
-- **Clarity and Readability:** For the best coding experience, the font uses a **dotted zero**, **open-contour `6` and `9`**, and sharp, **square punctuation**.
-- **High Underscore:** The underscore character is raised to ensure it is clearly visible and never blends with the line below.
+The font's vertical proportions, letter spacing, parenthesis size and arc ratio have been adjusted based on Ioskeley Mono, which gives the letterforms a squarer and more geometric appearance, while still retaining the overall design of Iosevka.
 
-For a complete list of all choices made to match Berkeley Mono, see the [`private-build-plans.toml`](./private-build-plans.toml) file.
+Many glyphs also have unconventional serifs, and unique shapes that give it a distinct personality while maintaining readability.
 
 ---
 
 ### License & Credits
 
-**Credits**: Ioskeley Mono is a custom configuration of the Iosevka typeface. All credit for the original design and build system goes to Belleve Invis and the Iosevka contributors.
+**Credits**: Nexsevka is a custom configuration of the Iosevka typeface. All credit for the original design and build system goes to Belleve Invis and the Iosevka contributors.
 
 Because this is a derivative of Iosevka, it is licensed under the same **SIL Open Font License 1.1**. See the `LICENSE` file for full details.
