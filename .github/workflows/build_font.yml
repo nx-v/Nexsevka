@@ -25,7 +25,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         repository: be5invis/Iosevka
-        branch: dev
+        ref: dev
         path: iosevka-src
         fetch-depth: 1
 
